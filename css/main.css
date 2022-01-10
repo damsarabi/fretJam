@@ -102,8 +102,7 @@ div.grid.fret-count > div {
 }
 
 .container div.octave:after {
-  right: 70px;
-  background-color: #999;
+  right: 75%;
 }
 
 .amaj7 .a { background-color: #ff0000!important; opacity: 1 }
