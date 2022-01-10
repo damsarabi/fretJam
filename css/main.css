@@ -1,0 +1,135 @@
+body {
+  font-family: monospace;
+}
+
+div.label {
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 25px;
+  transition: all 1.5s ease;
+  font-weight: bold;
+  padding: 20px 0;
+  background-color: #efefef;
+}
+
+div.label input {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 10px;
+  transition: all 1.5s ease;
+  color: green;
+}
+
+.grid {  
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(16, 6.25%);
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+div.grid.fret-count {
+
+}
+
+
+
+.grid > div{
+  text-align: center;
+  position: relative;
+  aspect-ratio: 1;
+
+  transition: background-color 1s ease;
+}
+
+div.grid.fret-count > div {
+  aspect-ratio:  auto;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.container > div {
+  border: 1px solid black;
+  
+  opacity: .2;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  
+  border-radius: 50%;
+  margin: 2px;
+  
+}
+.container > div > div:after{
+  content: '';
+}
+.container > div.fret-count > div {
+  border: 0;
+  opacity: 1;
+}
+
+.container div:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container div.a:before {content: "A"}
+.container div.as:before {content: "A#"}
+.container div.b:before {content: "B"}
+.container div.c:before {content: "C"}
+.container div.cs:before {content: "C#"}
+.container div.d:before {content: "D"}
+.container div.ds:before {content: "D#"}
+.container div.e:before {content: "E"}
+.container div.f:before {content: "F"}
+.container div.fs:before {content: "F#"}
+.container div.g:before {content: "G"}
+.container div.gs:before {content: "G#"}
+
+.container div.first {
+  overflow: hidden;
+}
+.container div.first:after {
+  content:"";
+  display: block;
+  height: 100%;
+  border-right: 1px dotted black;
+  position: absolute;
+  width: 1px;
+  right: 25%;
+}
+
+.container div.octave:after {
+  right: 70px;
+  background-color: #999;
+}
+
+.amaj7 .a { background-color: #ff0000!important; opacity: 1 }
+.amaj7 .cs { background-color: #c0edbb!important; opacity: 1 }
+.amaj7 .e { background-color: #bbcded!important; opacity: 1 }
+.amaj7 .g# { background-color: #ff9898!important; opacity: 1 }
+
+.cmaj7 .c { background-color: #ff0000!important; opacity: 1 }
+.cmaj7 .e { background-color: #c0edbb!important; opacity: 1 }
+.cmaj7 .g { background-color: #bbcded!important; opacity: 1 }
+.cmaj7 .b { background-color: #ff9898!important; opacity: 1 }
+
+.csmin7 .cs { background-color: #ff0000!important; opacity: 1 }
+.csmin7 .e { background-color: #c0edbb!important; opacity: 1 }
+.csmin7 .gs { background-color: #bbcded!important; opacity: 1 }
+.csmin7 .b { background-color: #ff9898!important; opacity: 1 }
+
+.dmin7 .d { background-color: #ff0000!important; opacity: 1 }
+.dmin7 .f { background-color: #c0edbb!important; opacity: 1 }
+.dmin7 .a { background-color: #bbcded!important; opacity: 1 }
+.dmin7 .c { background-color: #ff9898!important; opacity: 1 }
+
+.emin7 .e { background-color: #ff0000!important; opacity: 1 }
+.emin7 .g { background-color: #c0edbb!important; opacity: 1 }
+.emin7 .b { background-color: #bbcded!important; opacity: 1 }
+.emin7 .d { background-color: #ff9898!important; opacity: 1 }
+
+
+
