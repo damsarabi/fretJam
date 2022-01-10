@@ -16,8 +16,6 @@ div.top-row > div {
 div.label {
   
   text-align: center;
-  padding-bottom: 25px;
-  transition: all 1.5s ease;
 }
 
 div.label input {
@@ -30,10 +28,11 @@ div.label input {
 
 #chord, #root {
   border: 0;
-  text-transform: uppercase;
+  
 }
 #root {
   width: 50px;
+  text-transform: uppercase;
 }
 
 .grid {  
@@ -71,6 +70,7 @@ div.grid.fret-count > div {
   font-weight: bold;
   border-radius: 50%;
   margin: 2px;
+  transition: all .5s ease;
 }
 .container > div:hover {
   background: #000!important;
