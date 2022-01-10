@@ -14,12 +14,39 @@
 </head>
 
 <body>
-  <div class="label">Chord: <input id="chord" type="text" value="Cmaj7"></div>
+  <div class="top-row">
+    <div class="top-block">
+      <div class="label">Chord: <input id="chord" type="text" value="Cmaj7" disabled></div>
+    </div>
+     <div class="top-block">
+      <div class="label">Root: <input id="root" type="text" value="C" disabled></div>
+    </div>
+     <div class="top-block">
+      <div class="label">
+        <label for="flavor">Flavor:</label>
+        <select name="flavor" id="flavor">
+          <option value="Maj" selected>Major</option>
+          <option value="Min">Minor</option>
+          <option value="Dim">Diminished</option>
+        </select>
+      </div>
+    </div>
+    <div class="top-block">
+      <div class="label">
+        <label for="extention">Extention:</label>
+        <select name="extention" id="extention">
+          <option value="">-</option>
+          <option value="7" selected>7</option>
+          <option value="d7">Dom 7</option>
+        </select>
+      </div>
+    </div>
+  </div>
   <div class="grid fret-count">
     <div>0</div><div></div><div></div><div>3</div><div></div><div>5</div><div></div><div>7</div><div></div><div>9</div><div></div><div></div><div>12</div><div></div><div></div><div>15</div>
   </div>
   <div id="fret-board" class="container grid">
-    <div class="first e"></div>
+    <div class="e"></div>
     <div class="f"></div>
     <div class="fs"></div>
     <div class="g"></div>
@@ -31,11 +58,11 @@
     <div class="cs"></div>
     <div class="d"></div>
     <div class="ds"></div>
-    <div class="first octave e"></div>
+    <div class="e"></div>
     <div class="f"></div>
     <div class="fs"></div>
     <div class="g"></div>
-    <div class="first b"></div>
+    <div class="b"></div>
     <div class="c"></div>
     <div class="cs"></div>
     <div class="d"></div>
@@ -47,11 +74,11 @@
     <div class="gs"></div>
     <div class="a"></div>
     <div class="as"></div>
-    <div class="first octave b"></div>
+    <div class="b"></div>
     <div class="c"></div>
     <div class="cs"></div>
     <div class="d"></div>
-    <div class="first g"></div>
+    <div class="g"></div>
     <div class="gs"></div>
     <div class="a"></div>
     <div class="as"></div>
@@ -63,11 +90,11 @@
     <div class="e"></div>
     <div class="f"></div>
     <div class="fs"></div>
-    <div class="first octave g"></div>
+    <div class="g"></div>
     <div class="gs"></div>
     <div class="a"></div>
     <div class="as"></div> 
-    <div class="first d"></div>
+    <div class="d"></div>
     <div class="ds"></div>
     <div class="e"></div>
     <div class="f"></div>
@@ -79,11 +106,11 @@
     <div class="b"></div>
     <div class="c"></div>
     <div class="cs"></div>
-    <div class="first octave d"></div>
+    <div class="d"></div>
     <div class="ds"></div>
     <div class="e"></div>
     <div class="f"></div>
-    <div class="first a"></div>
+    <div class="a"></div>
     <div class="as"></div>
     <div class="b"></div>
     <div class="c"></div>
@@ -95,11 +122,11 @@
     <div class="fs"></div>
     <div class="g"></div>
     <div class="gs"></div>
-    <div class="first octave a"></div>
+    <div class="a"></div>
     <div class="as"></div>
     <div class="c"></div>
     <div class="b"></div>
-    <div class="first e"></div>
+    <div class="e"></div>
     <div class="f"></div>
     <div class="fs"></div>
     <div class="g"></div>
@@ -111,7 +138,7 @@
     <div class="cs"></div>
     <div class="d"></div>
     <div class="ds"></div>
-    <div class="first octave e"></div>
+    <div class="e"></div>
     <div class="f"></div>
     <div class="fs"></div>
     <div class="g"></div>
