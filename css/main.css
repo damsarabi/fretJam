@@ -14,7 +14,6 @@ div.top-row > div {
 }
 
 div.label {
-  
   text-align: center;
 }
 
@@ -28,11 +27,12 @@ div.label input {
 
 #chord, #root {
   border: 0;
+  text-transform: capitalize;
   
 }
 #root {
   width: 50px;
-  text-transform: uppercase;
+  
 }
 
 .grid {  
@@ -42,12 +42,6 @@ div.label input {
   padding: 0 20px;
   box-sizing: border-box;
 }
-
-div.grid.fret-count {
-
-}
-
-
 
 .grid > div{
   text-align: center;
@@ -148,5 +142,23 @@ div.grid.fret-count > div {
 .emin7 .b { background-color: #bbcded!important; opacity: 1 }
 .emin7 .d { background-color: #ff9898!important; opacity: 1 }
 
+.fmaj7 .f { background-color: #ff0000!important; opacity: 1 }
+.fmaj7 .a { background-color: #c0edbb!important; opacity: 1 }
+.fmaj7 .c { background-color: #bbcded!important; opacity: 1 }
+.fmaj7 .e { background-color: #ff9898!important; opacity: 1 }
 
+.gdom7 .g { background-color: #ff0000!important; opacity: 1 }
+.gdom7 .b { background-color: #c0edbb!important; opacity: 1 }
+.gdom7 .d { background-color: #bbcded!important; opacity: 1 }
+.gdom7 .f { background-color: #ff9898!important; opacity: 1 }
+
+.amin7 .a { background-color: #ff0000!important; opacity: 1 }
+.amin7 .c { background-color: #c0edbb!important; opacity: 1 }
+.amin7 .e { background-color: #bbcded!important; opacity: 1 }
+.amin7 .g { background-color: #ff9898!important; opacity: 1 }
+
+.bdim7 .b { background-color: #ff0000!important; opacity: 1 }
+.bdim7 .d { background-color: #c0edbb!important; opacity: 1 }
+.bdim7 .f { background-color: #bbcded!important; opacity: 1 }
+.bdim7 .a { background-color: #ff9898!important; opacity: 1 }
 
