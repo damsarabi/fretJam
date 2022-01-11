@@ -162,3 +162,80 @@ div.grid.fret-count > div {
 .bdim7 .f { background-color: #bbcded!important; opacity: 1 }
 .bdim7 .a { background-color: #ff9898!important; opacity: 1 }
 
+/* Pentatonic */
+
+div[class*="apen"] .a { background-color: #ff0000!important; opacity: 1 }
+div[class*="apen"] .c { background-color: #43a722!important; opacity: 1 }
+div[class*="apen"] .d { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="apen"] .e { background-color: #ff9898!important; opacity: 1 }
+div[class*="apen"] .g { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="aspen"] .as { background-color: #ff0000!important; opacity: 1 }
+div[class*="aspen"] .cs { background-color: #43a722!important; opacity: 1 }
+div[class*="aspen"] .ds { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="aspen"] .f { background-color: #ff9898!important; opacity: 1 }
+div[class*="aspen"] .gs { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="bpen"] .b { background-color: #ff0000!important; opacity: 1 }
+div[class*="bpen"] .d { background-color: #43a722!important; opacity: 1 }
+div[class*="bpen"] .e { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="bpen"] .fs { background-color: #ff9898!important; opacity: 1 }
+div[class*="bpen"] .a { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="cpen"] .c { background-color: #ff0000!important; opacity: 1 }
+div[class*="cpen"] .ds { background-color: #43a722!important; opacity: 1 }
+div[class*="cpen"] .f { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="cpen"] .g { background-color: #ff9898!important; opacity: 1 }
+div[class*="cpen"] .as { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="cspen"] .cs { background-color: #ff0000!important; opacity: 1 }
+div[class*="cspen"] .e { background-color: #43a722!important; opacity: 1 }
+div[class*="cspen"] .fs { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="cspen"] .gs { background-color: #ff9898!important; opacity: 1 }
+div[class*="cspen"] .b { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="dpen"] .d { background-color: #ff0000!important; opacity: 1 }
+div[class*="dpen"] .f { background-color: #43a722!important; opacity: 1 }
+div[class*="dpen"] .g { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="dpen"] .a { background-color: #ff9898!important; opacity: 1 }
+div[class*="dpen"] .c { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="dspen"] .ds { background-color: #ff0000!important; opacity: 1 }
+div[class*="dspen"] .fs { background-color: #43a722!important; opacity: 1 }
+div[class*="dspen"] .gs { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="dspen"] .as { background-color: #ff9898!important; opacity: 1 }
+div[class*="dspen"] .cs { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="epen"] .e { background-color: #ff0000!important; opacity: 1 }
+div[class*="epen"] .g { background-color: #43a722!important; opacity: 1 }
+div[class*="epen"] .a { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="epen"] .b { background-color: #ff9898!important; opacity: 1 }
+div[class*="epen"] .d { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="fpen"] .f { background-color: #ff0000!important; opacity: 1 }
+div[class*="fpen"] .gs { background-color: #43a722!important; opacity: 1 }
+div[class*="fpen"] .as { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="fpen"] .c { background-color: #ff9898!important; opacity: 1 }
+div[class*="fpen"] .ds { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="fspen"] .fs { background-color: #ff0000!important; opacity: 1 }
+div[class*="fspen"] .a { background-color: #43a722!important; opacity: 1 }
+div[class*="fspen"] .b { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="fspen"] .cs { background-color: #ff9898!important; opacity: 1 }
+div[class*="fspen"] .e { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="gpen"] .g { background-color: #ff0000!important; opacity: 1 }
+div[class*="gpen"] .as { background-color: #43a722!important; opacity: 1 }
+div[class*="gpen"] .c { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="gpen"] .d { background-color: #ff9898!important; opacity: 1 }
+div[class*="gpen"] .f { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="gspen"] .gs { background-color: #ff0000!important; opacity: 1 }
+div[class*="gspen"] .b { background-color: #43a722!important; opacity: 1 }
+div[class*="gspen"] .cs { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="gspen"] .ds { background-color: #ff9898!important; opacity: 1 }
+div[class*="gspen"] .fs { background-color: #c0edbb!important; opacity: 1 }
+
+/* End of Pentatonic
+
+
