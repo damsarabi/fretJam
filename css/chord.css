@@ -1,0 +1,223 @@
+
+.amaj7 .a { background-color: #ff0000!important; opacity: 1 }
+.amaj7 .cs { background-color: #c0edbb!important; opacity: 1 }
+.amaj7 .e { background-color: #bbcded!important; opacity: 1 }
+.amaj7 .g# { background-color: #ff9898!important; opacity: 1 }
+
+.cmaj7 .c { background-color: #ff0000!important; opacity: 1 }
+.cmaj7 .e { background-color: #c0edbb!important; opacity: 1 }
+.cmaj7 .g { background-color: #bbcded!important; opacity: 1 }
+.cmaj7 .b { background-color: #ff9898!important; opacity: 1 }
+
+.csmin7 .cs { background-color: #ff0000!important; opacity: 1 }
+.csmin7 .e { background-color: #c0edbb!important; opacity: 1 }
+.csmin7 .gs { background-color: #bbcded!important; opacity: 1 }
+.csmin7 .b { background-color: #ff9898!important; opacity: 1 }
+
+.dmin7 .d { background-color: #ff0000!important; opacity: 1 }
+.dmin7 .f { background-color: #c0edbb!important; opacity: 1 }
+.dmin7 .a { background-color: #bbcded!important; opacity: 1 }
+.dmin7 .c { background-color: #ff9898!important; opacity: 1 }
+
+.emin7 .e { background-color: #ff0000!important; opacity: 1 }
+.emin7 .g { background-color: #c0edbb!important; opacity: 1 }
+.emin7 .b { background-color: #bbcded!important; opacity: 1 }
+.emin7 .d { background-color: #ff9898!important; opacity: 1 }
+
+.fmaj7 .f { background-color: #ff0000!important; opacity: 1 }
+.fmaj7 .a { background-color: #c0edbb!important; opacity: 1 }
+.fmaj7 .c { background-color: #bbcded!important; opacity: 1 }
+.fmaj7 .e { background-color: #ff9898!important; opacity: 1 }
+
+.gdom7 .g { background-color: #ff0000!important; opacity: 1 }
+.gdom7 .b { background-color: #c0edbb!important; opacity: 1 }
+.gdom7 .d { background-color: #bbcded!important; opacity: 1 }
+.gdom7 .f { background-color: #ff9898!important; opacity: 1 }
+
+.amin7 .a { background-color: #ff0000!important; opacity: 1 }
+.amin7 .c { background-color: #c0edbb!important; opacity: 1 }
+.amin7 .e { background-color: #bbcded!important; opacity: 1 }
+.amin7 .g { background-color: #ff9898!important; opacity: 1 }
+
+.bdim7 .b { background-color: #ff0000!important; opacity: 1 }
+.bdim7 .d { background-color: #c0edbb!important; opacity: 1 }
+.bdim7 .f { background-color: #bbcded!important; opacity: 1 }
+.bdim7 .a { background-color: #ff9898!important; opacity: 1 }
+
+/* Pentatonic */
+
+div[class*="apen"] .a { background-color: #ff0000!important; opacity: 1 }
+div[class*="apen"] .c { background-color: #43a722!important; opacity: 1 }
+div[class*="apen"] .d { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="apen"] .e { background-color: #ff9898!important; opacity: 1 }
+div[class*="apen"] .g { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="aspen"] .as { background-color: #ff0000!important; opacity: 1 }
+div[class*="aspen"] .cs { background-color: #43a722!important; opacity: 1 }
+div[class*="aspen"] .ds { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="aspen"] .f { background-color: #ff9898!important; opacity: 1 }
+div[class*="aspen"] .gs { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="bpen"] .b { background-color: #ff0000!important; opacity: 1 }
+div[class*="bpen"] .d { background-color: #43a722!important; opacity: 1 }
+div[class*="bpen"] .e { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="bpen"] .fs { background-color: #ff9898!important; opacity: 1 }
+div[class*="bpen"] .a { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="cpen"] .c { background-color: #ff0000!important; opacity: 1 }
+div[class*="cpen"] .ds { background-color: #43a722!important; opacity: 1 }
+div[class*="cpen"] .f { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="cpen"] .g { background-color: #ff9898!important; opacity: 1 }
+div[class*="cpen"] .as { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="cspen"] .cs { background-color: #ff0000!important; opacity: 1 }
+div[class*="cspen"] .e { background-color: #43a722!important; opacity: 1 }
+div[class*="cspen"] .fs { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="cspen"] .gs { background-color: #ff9898!important; opacity: 1 }
+div[class*="cspen"] .b { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="dpen"] .d { background-color: #ff0000!important; opacity: 1 }
+div[class*="dpen"] .f { background-color: #43a722!important; opacity: 1 }
+div[class*="dpen"] .g { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="dpen"] .a { background-color: #ff9898!important; opacity: 1 }
+div[class*="dpen"] .c { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="dspen"] .ds { background-color: #ff0000!important; opacity: 1 }
+div[class*="dspen"] .fs { background-color: #43a722!important; opacity: 1 }
+div[class*="dspen"] .gs { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="dspen"] .as { background-color: #ff9898!important; opacity: 1 }
+div[class*="dspen"] .cs { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="epen"] .e { background-color: #ff0000!important; opacity: 1 }
+div[class*="epen"] .g { background-color: #43a722!important; opacity: 1 }
+div[class*="epen"] .a { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="epen"] .b { background-color: #ff9898!important; opacity: 1 }
+div[class*="epen"] .d { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="fpen"] .f { background-color: #ff0000!important; opacity: 1 }
+div[class*="fpen"] .gs { background-color: #43a722!important; opacity: 1 }
+div[class*="fpen"] .as { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="fpen"] .c { background-color: #ff9898!important; opacity: 1 }
+div[class*="fpen"] .ds { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="fspen"] .fs { background-color: #ff0000!important; opacity: 1 }
+div[class*="fspen"] .a { background-color: #43a722!important; opacity: 1 }
+div[class*="fspen"] .b { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="fspen"] .cs { background-color: #ff9898!important; opacity: 1 }
+div[class*="fspen"] .e { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="gpen"] .g { background-color: #ff0000!important; opacity: 1 }
+div[class*="gpen"] .as { background-color: #43a722!important; opacity: 1 }
+div[class*="gpen"] .c { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="gpen"] .d { background-color: #ff9898!important; opacity: 1 }
+div[class*="gpen"] .f { background-color: #c0edbb!important; opacity: 1 }
+
+div[class*="gspen"] .gs { background-color: #ff0000!important; opacity: 1 }
+div[class*="gspen"] .b { background-color: #43a722!important; opacity: 1 }
+div[class*="gspen"] .cs { background-color: #cf7e7e!important; opacity: 1 }
+div[class*="gspen"] .ds { background-color: #ff9898!important; opacity: 1 }
+div[class*="gspen"] .fs { background-color: #c0edbb!important; opacity: 1 }
+
+/* End of Pentatonic */
+
+/* Minor */
+
+.amin .a { background-color: #ff0000!important; opacity: 1 }
+.amin .c { background-color: #43a722!important; opacity: 1 }
+.amin .e { background-color: #cf7e7e!important; opacity: 1 }
+
+.asmin .as { background-color: #ff0000!important; opacity: 1 }
+.asmin .cs { background-color: #43a722!important; opacity: 1 }
+.asmin .f { background-color: #cf7e7e!important; opacity: 1 }
+
+.bmin .b { background-color: #ff0000!important; opacity: 1 }
+.bmin .d { background-color: #43a722!important; opacity: 1 }
+.bmin .fs { background-color: #cf7e7e!important; opacity: 1 }
+
+.cmin .c { background-color: #ff0000!important; opacity: 1 }
+.cmin .ds { background-color: #43a722!important; opacity: 1 }
+.cmin .g { background-color: #cf7e7e!important; opacity: 1 }
+
+.csmin .cs { background-color: #ff0000!important; opacity: 1 }
+.csmin .e { background-color: #43a722!important; opacity: 1 }
+.csmin .gs { background-color: #cf7e7e!important; opacity: 1 }
+
+.dmin .d { background-color: #ff0000!important; opacity: 1 }
+.dmin .f { background-color: #43a722!important; opacity: 1 }
+.dmin .a { background-color: #cf7e7e!important; opacity: 1 }
+
+.dsmin .ds { background-color: #ff0000!important; opacity: 1 }
+.dsmin .fs { background-color: #43a722!important; opacity: 1 }
+.dsmin .as { background-color: #cf7e7e!important; opacity: 1 }
+
+.emin .e { background-color: #ff0000!important; opacity: 1 }
+.emin .g { background-color: #43a722!important; opacity: 1 }
+.emin .b { background-color: #cf7e7e!important; opacity: 1 }
+
+.fmin .f { background-color: #ff0000!important; opacity: 1 }
+.fmin .gs { background-color: #43a722!important; opacity: 1 }
+.fmin .c { background-color: #cf7e7e!important; opacity: 1 }
+
+.fsmin .fs { background-color: #ff0000!important; opacity: 1 }
+.fsmin .a { background-color: #43a722!important; opacity: 1 }
+.fsmin .cs { background-color: #cf7e7e!important; opacity: 1 }
+
+.gmin .g { background-color: #ff0000!important; opacity: 1 }
+.gmin .as { background-color: #43a722!important; opacity: 1 }
+.gmin .d { background-color: #cf7e7e!important; opacity: 1 }
+
+.gsmin .gs { background-color: #ff0000!important; opacity: 1 }
+.gsmin .b { background-color: #43a722!important; opacity: 1 }
+.gsmin .ds { background-color: #cf7e7e!important; opacity: 1 }
+
+/* End of Minor */
+
+/* Major */
+
+.amaj .a { background-color: #ff0000!important; opacity: 1 }
+.amaj .cs { background-color: #43a722!important; opacity: 1 }
+.amaj .e { background-color: #cf7e7e!important; opacity: 1 }
+
+.asmaj .as { background-color: #ff0000!important; opacity: 1 }
+.asmaj .d { background-color: #43a722!important; opacity: 1 }
+.asmaj .f { background-color: #cf7e7e!important; opacity: 1 }
+
+.bmaj .b { background-color: #ff0000!important; opacity: 1 }
+.bmaj .ds { background-color: #43a722!important; opacity: 1 }
+.bmaj .fs { background-color: #cf7e7e!important; opacity: 1 }
+
+.cmaj .c { background-color: #ff0000!important; opacity: 1 }
+.cmaj .e { background-color: #43a722!important; opacity: 1 }
+.cmaj .g { background-color: #cf7e7e!important; opacity: 1 }
+
+.csmaj .cs { background-color: #ff0000!important; opacity: 1 }
+.csmaj .f { background-color: #43a722!important; opacity: 1 }
+.csmaj .gs { background-color: #cf7e7e!important; opacity: 1 }
+
+.dmaj .d { background-color: #ff0000!important; opacity: 1 }
+.dmaj .fs { background-color: #43a722!important; opacity: 1 }
+.dmaj .a { background-color: #cf7e7e!important; opacity: 1 }
+
+.dsmaj .ds { background-color: #ff0000!important; opacity: 1 }
+.dsmaj .g { background-color: #43a722!important; opacity: 1 }
+.dsmaj .as { background-color: #cf7e7e!important; opacity: 1 }
+
+.emaj .e { background-color: #ff0000!important; opacity: 1 }
+.emaj .gs { background-color: #43a722!important; opacity: 1 }
+.emaj .b { background-color: #cf7e7e!important; opacity: 1 }
+
+.fmaj .f { background-color: #ff0000!important; opacity: 1 }
+.fmaj .a { background-color: #43a722!important; opacity: 1 }
+.fmaj .c { background-color: #cf7e7e!important; opacity: 1 }
+
+.fsmaj .fs { background-color: #ff0000!important; opacity: 1 }
+.fsmaj .as { background-color: #43a722!important; opacity: 1 }
+.fsmaj .cs { background-color: #cf7e7e!important; opacity: 1 }
+
+.gmaj .g { background-color: #ff0000!important; opacity: 1 }
+.gmaj .b { background-color: #43a722!important; opacity: 1 }
+.gmaj .d { background-color: #cf7e7e!important; opacity: 1 }
+
+.gsmaj .gs { background-color: #ff0000!important; opacity: 1 }
+.gsmaj .c { background-color: #43a722!important; opacity: 1 }
+.gsmaj .ds { background-color: #cf7e7e!important; opacity: 1 }
