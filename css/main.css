@@ -18,21 +18,54 @@ ul.top-row {
   left: 0;
 }
 
-ul.top-row li {
+ul.top-row > li {
   display: table-cell;
 }
 
-ul.top-row li:first-child {
+ul.top-row > li:first-child {
   width: 300px;
 }
 
-ul.top-row li:nth-child(2) {
+ul.top-row > li:nth-child(2) {
   width: 350px;
 }
 
-ul.top-row li:last-child {
+ul.top-row > li:last-child {
   text-align: right;
+}
 
+ul.top-row li.all-notes {
+  width: 275px;
+}
+
+ul.top-row li.all-notes ul {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 275px;
+  top: 8px;
+}
+
+.all-notes li {
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 2px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.all-notes li:hover {
+  background-color: black;
+  color: white;
 }
 
 .label input {

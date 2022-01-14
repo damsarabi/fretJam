@@ -10,7 +10,10 @@
       var extn = document.getElementById("extention").value;
 
       document.getElementById("chord").value =  root +  flvr + extn;
-      document.getElementById("fret-board").className = "container grid " + (document.getElementById("chord").value).toLowerCase()
+      document.getElementById("allnotesChord").value =  root +  flvr + extn;
+
+      document.getElementById("fret-board").className = "container grid " + (document.getElementById("chord").value).toLowerCase();
+      document.getElementById("js-allnotes").className = (document.getElementById("chord").value).toLowerCase();
    }
 
    function clear() {
