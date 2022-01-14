@@ -1,6 +1,6 @@
 (function() {
    function changeChord() {
-      
+
       if (document.getElementById("flavor").value === 'Pen') {
          document.getElementById("extention").selectedIndex = 0;
       }
@@ -11,6 +11,10 @@
 
       document.getElementById("chord").value =  root +  flvr + extn;
       document.getElementById("fret-board").className = "container grid " + (document.getElementById("chord").value).toLowerCase()
+   }
+
+   function clear() {
+    document.getElementById("chord").value
    }
 
    changeChord();
@@ -35,7 +39,5 @@
          rowHide[i].classList.toggle("hide");
      });
    }
-   
-
 })();
 

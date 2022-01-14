@@ -2,9 +2,11 @@ body {
   font-family: monospace;
 }
 
-div.top-row {
+ul.top-row {
   font-size: 24px;
+  display: table;
   padding: 20px;
+  margin: 0;
   background-color: #efefef;
   font-weight: bold;
   position: fixed;
@@ -16,20 +18,33 @@ div.top-row {
   left: 0;
 }
 
-div.top-row > div {
-  display: inline-block;
+ul.top-row li {
+  display: table-cell;
 }
 
-div.label {
-  text-align: center;
+ul.top-row li:first-child {
+  width: 300px;
 }
 
-div.label input {
+ul.top-row li:nth-child(2) {
+  width: 350px;
+}
+
+ul.top-row li:last-child {
+  text-align: right;
+
+}
+
+.label input {
   border: 1px solid #ccc;
   border-radius: 7px;
   padding: 10px;
   transition: all 1.5s ease;
   color: green;
+}
+
+#chord {
+  width: 100px;
 }
 
 #chord, #root {
