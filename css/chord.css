@@ -1,10 +1,10 @@
 
-.on { background-color:#999!important; }
+.on { background-color:#999!important; opacity: 1!important; }
 
 .amaj7 .a { background-color: #ff0000!important; opacity: 1 }
 .amaj7 .cs { background-color: #c0edbb!important; opacity: 1 }
 .amaj7 .e { background-color: #bbcded!important; opacity: 1 }
-.amaj7 .g# { background-color: #ff9898!important; opacity: 1 }
+.amaj7 .gs { background-color: #ff9898!important; opacity: 1 }
 
 .cmaj7 .c { background-color: #ff0000!important; opacity: 1 }
 .cmaj7 .e { background-color: #c0edbb!important; opacity: 1 }
