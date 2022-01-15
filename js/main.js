@@ -14,11 +14,11 @@
 
       document.getElementById("fret-board").className = "container grid " + (document.getElementById("chord").value).toLowerCase();
       document.getElementById("js-allnotes").className = (document.getElementById("chord").value).toLowerCase();
-   }
+   }  
 
-   function clear() {
-    document.getElementById("chord").value
-   }
+   document.getElementById("js-clear").addEventListener("click", function() {
+    location.reload()
+   })
 
    changeChord();
    document.getElementById("chord").addEventListener("change", changeChord);
@@ -42,5 +42,16 @@
          rowHide[i].classList.toggle("hide");
      });
    }
+
+   var xtraNote = document.querySelectorAll("#js-allnotes > li")
+
+    for (let i = 0; i < xtraNote.length; i++) {
+      xtraNote[i].addEventListener("click", function() {
+        var tmp = document.querySelectorAll("."+xtraNote[i].className);
+        for (let j= 0; j < tmp.length; j++) {
+          tmp[j].classList.toggle('on');
+        }
+      });
+    }
 })();
 
