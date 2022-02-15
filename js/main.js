@@ -1,7 +1,7 @@
 (function() {
 
   function changeChord() {
-    const notes = ["a", "as", "b", "c", "cs", "d", "ds", "e", "f", "fs", "g", "gs"]
+    const notes = ["a", "as", "b", "c", "cs", "d", "ds", "e", "f", "fs", "g", "gs"];
     const root = document.getElementById("root").value;
     const chord_type = document.getElementById("chord-type").value;
     const chord_ext = document.getElementById("chord-ext").value;
@@ -83,6 +83,8 @@
 
       default: 
     }
+
+    document.getElementById("chord").value = root + chord_type + chord_ext
  }  
 
  document.getElementById("js-clear").addEventListener("click", function() {
