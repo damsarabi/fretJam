@@ -295,16 +295,12 @@ div.grid.fret-count > div {
   background-color: #ccc;
 }
 
-.on.root {
-  background-color: #000;
-  color: #fff;
-}
-.on.minThird {
-  background-color: #ccc;
-}
-.on.forth {background-color: #ccc;}
-.on.fifth {background-color: #ccc;}
-.on.minSeventh {background-color: #ccc;}
+.on.root {background-color: #e85a4f;}
+.on.minThird {background-color: #d8c3a5;}
+.on.forth {background-color: #8e8d8a;}
+.on.fifth {background-color: #e98074;}
+.on.minSeventh {background-color: #eae7dc;}
+.on.tritone {background-color: #ccc;}
 
 
 

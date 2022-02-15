@@ -30,7 +30,7 @@
       cur = document.querySelectorAll('[data-note="'+eval(interval)+'"]');
       console.log(cur.length)
       for (let i = 0; i < cur.length; i++) {
-        cur[i].classList.add('"'+interval+'"', 'on');
+        cur[i].classList.add(interval, 'on');
       }
     }
 
@@ -92,7 +92,7 @@
  changeChord();
 
 // Changing the Root
-var el = document.querySelectorAll(".note");
+var el = document.querySelectorAll("#fret-board .note");
   for (let i = 0; i < el.length; i++) {
     el[i].addEventListener("click", function() {
     document.getElementById("root").value = el[i].dataset.note;
@@ -141,7 +141,7 @@ var el = document.querySelectorAll(".note");
 
   for (let i = 0; i < xtraNote.length; i++) {
     xtraNote[i].addEventListener("click", function() {
-      var tmp = document.querySelectorAll("."+xtraNote[i].dataset.note);
+      var tmp = document.querySelectorAll('[data-note="'+xtraNote[i].dataset.note+'"]'); 
       for (let j= 0; j < tmp.length; j++) {
         tmp[j].classList.toggle('on');
       }
