@@ -2,9 +2,23 @@ body {
   font-family: monospace;
 }
 
+.clrfix {
+  overflow: auto;
+}
+.clrfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.f-right {
+  float: right;
+}
+.f-left {
+  float: left;
+}
+
 ul.top-row {
   font-size: 24px;
-  display: table;
   padding: 20px;
   margin: 0;
   background-color: #efefef;
@@ -18,20 +32,80 @@ ul.top-row {
   left: 0;
 }
 
-ul.top-row > li {
-  display: table-cell;
-}
-
 ul.top-row > li:first-child {
   width: 300px;
 }
 
-ul.top-row > li:nth-child(2) {
-  width: 350px;
+ul.top-row > li {
+  list-style-type: none;
 }
 
+ul.button-group {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+ul.button-group.js-chord-type {
+  font-size: 22px;
+}
+
+
+ul.button-group li {
+  display: block;
+  float: left;
+  cursor: pointer;
+  margin: 0;
+  border: 1px solid;
+  border-left: 0;
+  padding: 2px 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+ul.button-group li.on, ul.button-group li.on:hover {
+  color: #fff;
+  background-color: #111;
+  cursor: default;
+}
+
+ul.button-group li:first-child {
+  border-left: 1px solid black;
+}
+
+ul.button-group li:hover {
+  background-color: #efefef;
+}
+
+ul.js-chord-ext li {
+  display: none;
+}
+
+.maj ul.js-chord-ext li.maj {
+  display: block;
+}
+.min ul.js-chord-ext li.min {
+  display: block;
+}
+.dom ul.js-chord-ext li.dom {
+  display: block;
+}
+.dim ul.js-chord-ext li.dim {
+  display: block;
+}
+.aug ul.js-chord-ext li.aug {
+  display: block;
+}
+.sus ul.js-chord-ext li.sus {
+  display: block;
+}
+
+
 ul.top-row > li:last-child {
-  text-align: right;
+  float: right;
 }
 
 ul.top-row li.all-notes {
@@ -145,18 +219,18 @@ div.grid.fret-count > div {
   transform: translate(-50%, -50%);
 }
 
-.container div.a:before {content: "A"}
-.container div.as:before {content: "A#"}
-.container div.b:before {content: "B"}
-.container div.c:before {content: "C"}
-.container div.cs:before {content: "C#"}
-.container div.d:before {content: "D"}
-.container div.ds:before {content: "D#"}
-.container div.e:before {content: "E"}
-.container div.f:before {content: "F"}
-.container div.fs:before {content: "F#"}
-.container div.g:before {content: "G"}
-.container div.gs:before {content: "G#"}
+[data-note='a']:before {content: "A"}
+[data-note='as']:before {content: "A#"}
+[data-note='b']:before {content: "B"}
+[data-note='c']:before {content: "C"}
+[data-note='cs']:before {content: "C#"}
+[data-note='d']:before {content: "D"}
+[data-note='ds']:before {content: "D#"}
+[data-note='e']:before {content: "E"}
+[data-note='f']:before {content: "F"}
+[data-note='fs']:before {content: "F#"}
+[data-note='g']:before {content: "G"}
+[data-note='gs']:before {content: "G#"}
 
 .container div.first {
   overflow: hidden;
@@ -216,6 +290,21 @@ div.grid.fret-count > div {
   display: block;
 }
 
+.note.on {
+  opacity: 1;
+  background-color: #ccc;
+}
+
+.on.root {
+  background-color: #000;
+  color: #fff;
+}
+.on.minThird {
+  background-color: #ccc;
+}
+.on.forth {background-color: #ccc;}
+.on.fifth {background-color: #ccc;}
+.on.minSeventh {background-color: #ccc;}
 
 
 
