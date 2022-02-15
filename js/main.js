@@ -120,12 +120,16 @@ var el = document.querySelectorAll("#fret-board .note");
   var cxt = document.querySelectorAll("#js-chord-ext > li");
   for (let i = 0; i < cxt.length; i++) {
     cxt[i].addEventListener("click", function() {
-      document.getElementById("chord-ext").value = cxt[i].dataset.cext;
-      if (document.querySelectorAll("#js-chord-ext > li.on").length > 0) {
+      if (cxt[i].classList.contains('on')) {
+        document.getElementById("chord-ext").value = "";
         document.querySelectorAll("#js-chord-ext > li.on")[0].classList.toggle('on');
+      } else {
+        document.getElementById("chord-ext").value = cxt[i].dataset.cext;
+        if (document.querySelectorAll("#js-chord-ext > li.on").length > 0) {
+          document.querySelectorAll("#js-chord-ext > li.on")[0].classList.toggle('on');
+        }
+        cxt[i].classList.add('on');
       }
-      cxt[i].classList.add('on');
-
       changeChord();
     });
   }
