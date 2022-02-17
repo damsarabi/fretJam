@@ -28,7 +28,6 @@
 
     function turnOn(interval) {
       cur = document.querySelectorAll('[data-note="'+eval(interval)+'"]');
-      console.log(cur.length)
       for (let i = 0; i < cur.length; i++) {
         cur[i].classList.add(interval, 'on');
       }
@@ -44,10 +43,16 @@
       case 'maj':
         turnOn("majThird");
         turnOn("fifth");
+        if (chord_ext === "seventh") {
+          turnOn("majSeventh")
+        }
         break;
       case 'min':
         turnOn("minThird");
         turnOn("fifth");
+        if (chord_ext === "seventh") {
+          turnOn("minSeventh")
+        }
         break;
       case 'dom':
         turnOn("majThird");
@@ -55,25 +60,13 @@
         turnOn("minSeventh")
         break;
       case 'dim':
-        cur = document.querySelectorAll('[data-note="'+minThird+'"]');
-        for (let i = 0; i < cur.length; i++) {
-          cur[i].classList.add('minThird', 'on');
-        }
-        cur = document.querySelectorAll('[data-note="'+tritone+'"]');
-        for (let i = 0; i < cur.length; i++) {
-          cur[i].classList.add('tritone', 'on');
-        }
+        turnOn("minThird");
+        turnOn("tritone");
         if (chord_ext === "seven") {
-          cur = document.querySelectorAll('[data-note="'+majSixth+'"]');
-          for (let i = 0; i < cur.length; i++) {
-            cur[i].classList.add('majSixth', 'on');
-          }
+          turnOn("majSixth")
         }
         if (chord_ext === "halfdim") {
-          cur = document.querySelectorAll('[data-note="'+minSeventh+'"]');
-          for (let i = 0; i < cur.length; i++) {
-            cur[i].classList.add('minSeventh', 'on');
-          }
+          turnOn("minSeventh")
         }
         break;
       case 'aug':
