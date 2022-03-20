@@ -149,7 +149,7 @@ ul.js-chord-ext li {
 #js-allnotes li {
   position: relative;
 }
-
+/*
 #js-allnotes li:after {
   content: "";
   display: block;
@@ -171,7 +171,7 @@ ul.js-chord-ext li {
 #js-allnotes li:nth-child(8):after { content: "iii" }
 #js-allnotes li:nth-child(9):after { content: "IV" }
 #js-allnotes li:nth-child(11):after { content: "V" }
-
+*/
 
 #chord, #root {
   border: 0;
