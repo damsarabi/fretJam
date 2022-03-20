@@ -13,15 +13,13 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body class="pent"> 
-  <ul class="top-row clrfix" >
-    <li class="f-left"> 
-      <div class="label">Chord: <input id="chord" type="text" value="" disabled></div>
-      <input id="root" type="hidden" value="e">
-      <input id="chord-type" type="hidden" value="pent">
-      <input id="chord-ext" type="hidden" value="">
-    </li>
-    <li class="f-left">
+<body class="pent">
+  <input id="root" type="hidden" value="e">
+  <input id="chord-type" type="hidden" value="pent">
+  <input id="chord-ext" type="hidden" value="">
+  <header>
+    <input id="chord" type="text" value="" disabled>
+    <div class="p-rel chord-container">
       <ul id="js-chord-type" class="button-group js-chord-type clrfix">
         <li class = "on" data-ctype="pent" data-pretty="Pent">Pen</li>
         <li data-ctype="maj" data-pretty="Maj">Maj</li>
@@ -31,31 +29,25 @@
         <li data-ctype="aug" data-pretty="aug">Aug</li>
         <li data-ctype="sus" data-pretty="sus">Sus</li>
       </ul>
-      <ul id="js-chord-ext" class="button-group js-chord-ext clrfix">
-        <li class="maj min" data-cext = "sixth" data-pretty="6">6th</li>
-        <li class="maj" data-cext = "sixnine" data-pretty="6/9">6/9</li>
-        <li class="maj min" data-cext = "seventh" data-pretty="7">7th</li>
-        <li class="maj min" data-cext = "nineth" data-pretty="9">9th</li>
-        <li class="maj min" data-cext = "eleventh" data-pretty="11">11th</li>
-        <li class="maj min" data-cext = "thirteenth" data-pretty="13">13th</li>
-        <li class="min" data-cext = "minmaj7" data-pretty="">min/maj 7th</li>
-        <li class="sus" data-cext = "two"> data-pretty=""2</li>
-        <li class="sus" data-cext = "four" data-pretty="">4</li>
-        <li class="sus dom" data-cext = "7sus4" data-pretty="">7sus4
-        <li class="dom dim aug" data-cext = "seven" data-pretty="">7</li>
-        <li class="dom" data-cext = "nine" data-pretty="">9</li>
-        <li class="dom" data-cext = "eleven" data-pretty="">11</li>
-        <li class="dom" data-cext = "thirteen" data-pretty="">13</li>
-        <li class="dim" data-cext = "halfdim" data-pretty="">1/2 dim</li>
-      </ul>
-    </li>
-    
-    <li class="f-right">
-      <a href="javascript:void(0)" id ="js-clear" class="clear ">Clear</a>
-    </li>
-
-    <li class="all-notes f-right">
-      <ul id="js-allnotes" class="amin">
+      <ul id="js-chord-ext" class="button-group js-chord-ext p-abs clrfix">
+          <li class="maj min" data-cext = "sixth" data-pretty="6">6th</li>
+          <li class="maj" data-cext = "sixnine" data-pretty="6/9">6/9</li>
+          <li class="maj min" data-cext = "seventh" data-pretty="7">7th</li>
+          <li class="maj min" data-cext = "nineth" data-pretty="9">9th</li>
+          <li class="maj min" data-cext = "eleventh" data-pretty="11">11th</li>
+          <li class="maj min" data-cext = "thirteenth" data-pretty="13">13th</li>
+          <li class="min" data-cext = "minmaj7" data-pretty="">m/m 7th</li>
+          <li class="sus" data-cext = "two" data-pretty="2">2</li>
+          <li class="sus" data-cext = "four" data-pretty="4">4</li>
+          <li class="sus dom" data-cext = "7sus4" data-pretty="">7sus4
+          <li class="dom dim aug" data-cext = "seven" data-pretty="">7</li>
+          <li class="dom" data-cext = "nine" data-pretty="">9</li>
+          <li class="dom" data-cext = "eleven" data-pretty="">11</li>
+          <li class="dom" data-cext = "thirteen" data-pretty="">13</li>
+          <li class="dim" data-cext = "halfdim" data-pretty="">1/2 dim</li>
+        </ul>
+      </div>
+      <ul id="js-allnotes" class="button-group">
         <li class="note" data-note="a"></li>
         <li class="note" data-note="as"></li>
         <li class="note" data-note="b"></li>
@@ -69,11 +61,11 @@
         <li class="note" data-note="g"></li>
         <li class="note" data-note="gs"></li>
       </ul>
-    </li>
+      <a href="javascript:void(0)" id ="js-clear" class="clear f-right clear-all">&#10062</a>
+  </header>
 
-  </ul>
   <div class="grid fret-count">
-    <div>0</div><div></div><div></div><div>3</div><div></div><div>5</div><div></div><div>7</div><div></div><div>9</div><div></div><div></div><div>12</div><div></div><div></div><div>15</div>
+    <div>0</div><div></div><div></div><div>3</div><div></div><div>5</div><div></div><div>7</div><div></div><div>9</div><div></div><div></div><div>12</div><div></div><div></div><div>15</div><div></div><div>17</div><div></div><div>19</div>
   </div>
   <div id="fret-board" class="container grid">
     <div class="note" data-note="e"></div>
@@ -92,6 +84,11 @@
     <div class="note" data-note="f"></div>
     <div class="note" data-note="fs"></div>
     <div class="note" data-note="g"></div>
+    <div class="note" data-note="gs"></div>
+    <div class="note" data-note="a"></div>
+    <div class="note" data-note="as"></div>
+    <div class="note" data-note="b"></div>
+
     <div class="note" data-note="b"></div>
     <div class="note" data-note="c"></div>
     <div class="note" data-note="cs"></div>
@@ -108,38 +105,13 @@
     <div class="note" data-note="c"></div>
     <div class="note" data-note="cs"></div>
     <div class="note" data-note="d"></div>
-    <div class="note" data-note="g"></div>
-    <div class="note" data-note="gs"></div>
-    <div class="note" data-note="a"></div>
-    <div class="note" data-note="as"></div>
-    <div class="note" data-note="b"></div>
-    <div class="note" data-note="c"></div>
-    <div class="note" data-note="cs"></div>
-    <div class="note" data-note="d"></div>
     <div class="note" data-note="ds"></div>
     <div class="note" data-note="e"></div>
     <div class="note" data-note="f"></div>
     <div class="note" data-note="fs"></div>
+
     <div class="note" data-note="g"></div>
     <div class="note" data-note="gs"></div>
-    <div class="note" data-note="a"></div>
-    <div class="note" data-note="as"></div> 
-    <div class="note" data-note="d"></div>
-    <div class="note" data-note="ds"></div>
-    <div class="note" data-note="e"></div>
-    <div class="note" data-note="f"></div>
-    <div class="note" data-note="fs"></div>
-    <div class="note" data-note="g"></div>
-    <div class="note" data-note="gs"></div>
-    <div class="note" data-note="a"></div>
-    <div class="note" data-note="as"></div>
-    <div class="note" data-note="b"></div>
-    <div class="note" data-note="c"></div>
-    <div class="note" data-note="cs"></div>
-    <div class="note" data-note="d"></div>
-    <div class="note" data-note="ds"></div>
-    <div class="note" data-note="e"></div>
-    <div class="note" data-note="f"></div>
     <div class="note" data-note="a"></div>
     <div class="note" data-note="as"></div>
     <div class="note" data-note="b"></div>
@@ -156,6 +128,11 @@
     <div class="note" data-note="as"></div>
     <div class="note" data-note="b"></div>
     <div class="note" data-note="c"></div>
+    <div class="note" data-note="cs"></div>
+    <div class="note" data-note="d"></div> 
+
+    <div class="note" data-note="d"></div>
+    <div class="note" data-note="ds"></div>
     <div class="note" data-note="e"></div>
     <div class="note" data-note="f"></div>
     <div class="note" data-note="fs"></div>
@@ -172,9 +149,53 @@
     <div class="note" data-note="f"></div>
     <div class="note" data-note="fs"></div>
     <div class="note" data-note="g"></div>
+    <div class="note" data-note="gs"></div>
+    <div class="note" data-note="a"></div>
+
+    <div class="note" data-note="a"></div>
+    <div class="note" data-note="as"></div>
+    <div class="note" data-note="b"></div>
+    <div class="note" data-note="c"></div>
+    <div class="note" data-note="cs"></div>
+    <div class="note" data-note="d"></div>
+    <div class="note" data-note="ds"></div>
+    <div class="note" data-note="e"></div>
+    <div class="note" data-note="f"></div>
+    <div class="note" data-note="fs"></div>
+    <div class="note" data-note="g"></div>
+    <div class="note" data-note="gs"></div>
+    <div class="note" data-note="a"></div>
+    <div class="note" data-note="as"></div>
+    <div class="note" data-note="b"></div>
+    <div class="note" data-note="c"></div>
+    <div class="note" data-note="cs"></div>
+    <div class="note" data-note="d"></div>
+    <div class="note" data-note="ds"></div>
+    <div class="note" data-note="e"></div>
+
+    <div class="note" data-note="e"></div>
+    <div class="note" data-note="f"></div>
+    <div class="note" data-note="fs"></div>
+    <div class="note" data-note="g"></div>
+    <div class="note" data-note="gs"></div>
+    <div class="note" data-note="a"></div>
+    <div class="note" data-note="as"></div>
+    <div class="note" data-note="b"></div>
+    <div class="note" data-note="c"></div>
+    <div class="note" data-note="cs"></div>
+    <div class="note" data-note="d"></div>
+    <div class="note" data-note="ds"></div>
+    <div class="note" data-note="e"></div>
+    <div class="note" data-note="f"></div>
+    <div class="note" data-note="fs"></div>
+    <div class="note" data-note="g"></div>
+    <div class="note" data-note="gs"></div>
+    <div class="note" data-note="a"></div>
+    <div class="note" data-note="as"></div>
+    <div class="note" data-note="b"></div>
   </div>
   <ul id="js-row-toggle" class="grid fret-count">
-    <li>0</li><li></li><li></li><li>3</li><li></li><li>5</li><li></li><li>7</li><li></li><li>9</li><li></li><li></li><li>12</li><li></li><li></li><li>15</li>
+    <li>0</li><li></li><li></li><li>3</li><li></li><li>5</li><li></li><li>7</li><li></li><li>9</li><li></li><li></li><li>12</li><li></li><li></li><li>15</li><li></li><li>17</li><li></li><li>19</li>
   </ul>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

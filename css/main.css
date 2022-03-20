@@ -10,12 +10,10 @@ body {
   clear: both;
   display: table;
 }
-.f-right {
-  float: right;
-}
-.f-left {
-  float: left;
-}
+.f-right { float: right }
+.f-left { float: left }
+.p-rel { position: relative }
+.p-abs { position: absolute }
 
 ul.top-row {
   font-size: 24px;
@@ -23,13 +21,22 @@ ul.top-row {
   margin: 0;
   background-color: #efefef;
   font-weight: bold;
-  position: fixed;
   z-index: 3;
   width: 100%;
   box-sizing: border-box;
   height: 85px;
   top: 0;
   left: 0;
+}
+
+header {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #f0f6fc;
+  background-color: #161b22;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 ul.top-row > li:first-child {
@@ -40,50 +47,77 @@ ul.top-row > li {
   list-style-type: none;
 }
 
-ul.button-group {
+.button-group {
   display: block;
   list-style: none;
   padding: 0;
   margin: 0;
   font-weight: normal;
   font-size: 16px;
-  border-left: 1px solid #000;
 }
 
-ul.button-group.js-chord-type {
+.button-group.js-chord-type {
   font-size: 22px;
-  margin-top: -10px;
 }
 
-ul.button-group li {
-  display: block;
+.button-group li {
+  position: relative;
+  display: inline-block;
   float: left;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
   cursor: pointer;
-  margin: 0;
-  border: 1px solid #000;
-  padding: 2px 15px;
-  text-align: center;
-  background-color: #fff;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-ul.button-group li.on, ul.button-group li.on:hover {
+.button-group li.on, ul.button-group li:hover {
   color: #fff;
-  background-color: #111;
+  background-color: #666;
 }
-
-ul.button-group li:first-child {
-  border-left: 1px solid black;
+.button-group li.on.root {
+  background-color: #e85a4f;
 }
-
-ul.button-group li:hover {
-  background-color: #efefef;
+.button-group li.on {
+  font-weight: bold;
 }
 
 ul.js-chord-ext {
-  position: relative;
-  top: -1px ;
+  left: 0;
+  top: 100%;
+  background-color: black;
+  opacity: .1;
 }
 
+.chord-container:hover ul.js-chord-ext {
+  opacity: 1;
+}
+
+.chord-container {
+  flex: auto;
+}
+
+.clear-all {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  opacity: .7;
+  font-size: 20px;
+  line-height: 1;
+}
+
+
+.clear-all:hover {
+  opacity: 1;
+}
 ul.js-chord-ext li {
   display: none;
 }
@@ -107,55 +141,14 @@ ul.js-chord-ext li {
   display: block;
 }
 
-
-ul.top-row > li:last-child {
-  float: right;
-}
-
-ul.top-row li.all-notes {
-  width: 275px;
-}
-
-ul.top-row li.all-notes ul {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 275px;
-  top: 8px;
-}
-
-.all-notes li {
-  border: 1px solid black;
-  cursor: pointer;
-  background-color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 50%;
-  margin: 2px;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  line-height: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-.all-notes li:hover {
-  background-color: black;
-  color: white;
-}
-
-.label input {
+#chord {
   border: 1px solid #ccc;
   border-radius: 7px;
-  padding: 10px;
   transition: all 1.5s ease;
-  color: green;
-}
-
-#chord {
-  width: 100px;
+  background: #21262d;
+  color: #f0f6fc;
+  padding: 7px;
+  display: inline-block;
 }
 
 #chord, #root {
@@ -165,16 +158,12 @@ ul.top-row li.all-notes ul {
 }
 #root {
   width: 50px;
-  
-}
-.top-row + div.fret-count {
-  margin-top: 85px;
 }
 
 .grid {  
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(16, 6.25%);
+  grid-template-columns: repeat(20, 5%);
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -224,17 +213,17 @@ div.grid.fret-count > div {
 }
 
 [data-note='a']:before {content: "A"}
-[data-note='as']:before {content: "A#"}
+[data-note='as']:before {content: "A\266F"}
 [data-note='b']:before {content: "B"}
 [data-note='c']:before {content: "C"}
-[data-note='cs']:before {content: "C#"}
+[data-note='cs']:before {content: "C\266F"}
 [data-note='d']:before {content: "D"}
-[data-note='ds']:before {content: "D#"}
+[data-note='ds']:before {content: "D\266F"}
 [data-note='e']:before {content: "E"}
 [data-note='f']:before {content: "F"}
-[data-note='fs']:before {content: "F#"}
+[data-note='fs']:before {content: "F\266F"}
 [data-note='g']:before {content: "G"}
-[data-note='gs']:before {content: "G#"}
+[data-note='gs']:before {content: "G\266F"}
 
 .container div.first {
   overflow: hidden;

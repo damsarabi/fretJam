@@ -5,20 +5,35 @@
     const root = document.getElementById("root").value;
     const chord_type = document.getElementById("chord-type").value;
     const chord_ext = document.getElementById("chord-ext").value;
-
+   
+    const minSecond = notes[(notes.indexOf(root) + 1) % 12];
+    const majSecond = notes[(notes.indexOf(root) + 2) % 12];
     const minThird = notes[(notes.indexOf(root) + 3) % 12];
     const majThird = notes[(notes.indexOf(root) + 4) % 12];
     const forth = notes[(notes.indexOf(root) + 5) % 12];
     const tritone = notes[(notes.indexOf(root) + 6) % 12];
     const fifth = notes[(notes.indexOf(root) + 7) % 12];
+    const minSixth = notes[(notes.indexOf(root) + 8) % 12];
     const majSixth = notes[(notes.indexOf(root) + 9) % 12];
-
     const minSeventh = notes[(notes.indexOf(root) + 10) % 12];
     const majSeventh = notes[(notes.indexOf(root) + 11) % 12];
 
-    const allNotes = document.querySelectorAll(".note")
+    const orderNotes = [root, minSecond, majSecond, minThird, majThird, forth, tritone,fifth, minSixth,majSixth,minSeventh,majSeventh]
+
+    const allNotes = document.querySelectorAll(".note");
     for (let i = 0; i < allNotes.length; i++) {
       allNotes[i].className = "note";
+    }
+
+    document.querySelector('#js-allnotes').innerHTML = "";
+
+    // Add Notes to top Section
+    for (let i = 0; i < orderNotes.length; i++) {
+      var node = document.createElement('li');
+      node.className = "note";
+      //node.appendChild(document.createTextNode(orderNotes[i]));
+      node.setAttribute("data-note",orderNotes[i])
+      document.querySelector('#js-allnotes').appendChild(node);
     }
 
     var cur = document.querySelectorAll('[data-note="'+root+'"]');
@@ -43,16 +58,15 @@
       case 'maj':
         turnOn("majThird");
         turnOn("fifth");
-        if (chord_ext === "seventh") {
-          turnOn("majSeventh")
-        }
+        if (chord_ext === "seventh") turnOn("majSeventh")
+        if (chord_ext === "seventh") turnOn("majSeventh")
         break;
       case 'min':
         turnOn("minThird");
         turnOn("fifth");
-        if (chord_ext === "seventh") {
-          turnOn("minSeventh")
-        }
+        if (chord_ext === "sixth") turnOn("majSixth")
+        if (chord_ext === "seventh") turnOn("minSeventh")
+        if (chord_ext === "nineth") turnOn("nineth")
         break;
       case 'dom':
         turnOn("majThird");
@@ -62,12 +76,8 @@
       case 'dim':
         turnOn("minThird");
         turnOn("tritone");
-        if (chord_ext === "seven") {
-          turnOn("majSixth")
-        }
-        if (chord_ext === "halfdim") {
-          turnOn("minSeventh")
-        }
+        if (chord_ext === "seven") turnOn("majSixth")
+        if (chord_ext === "halfdim") turnOn("minSeventh")
         break;
       case 'aug':
         break;
