@@ -18,16 +18,16 @@
   <input id="chord-type" type="hidden" value="pent">
   <input id="chord-ext" type="hidden" value="">
   <header>
-    <input id="chord" type="text" value="" disabled>
+    <div id="chord" data-note=""></div>
     <div class="p-rel chord-container">
       <ul id="js-chord-type" class="button-group js-chord-type clrfix">
-        <li class = "on" data-ctype="pent" data-pretty="Pent">Pen</li>
+        <li class = "on" data-ctype="pent" data-pretty="<sup>Pent</sup>">Pen</li>
         <li data-ctype="maj" data-pretty="Maj">Maj</li>
         <li data-ctype="min" data-pretty="m">Min</li>
         <li data-ctype="dom" data-pretty="&Delta;">Dom</li>
         <li data-ctype="dim" data-pretty="&#9900;">Dim</li>
-        <li data-ctype="aug" data-pretty="aug">Aug</li>
-        <li data-ctype="sus" data-pretty="sus">Sus</li>
+        <li data-ctype="aug" data-pretty="<sup>+</sup>">Aug</li>
+        <li data-ctype="sus" data-pretty="<sup>sus</sup>">Sus</li>
       </ul>
       <ul id="js-chord-ext" class="button-group js-chord-ext p-abs clrfix">
           <li class="maj min" data-cext = "sixth" data-pretty="6">6th</li>
@@ -40,10 +40,10 @@
           <li class="sus" data-cext = "two" data-pretty="2">2</li>
           <li class="sus" data-cext = "four" data-pretty="4">4</li>
           <li class="sus dom" data-cext = "7sus4" data-pretty="">7sus4
-          <li class="dom dim aug" data-cext = "seven" data-pretty="">7</li>
-          <li class="dom" data-cext = "nine" data-pretty="">9</li>
-          <li class="dom" data-cext = "eleven" data-pretty="">11</li>
-          <li class="dom" data-cext = "thirteen" data-pretty="">13</li>
+          <li class="dom dim aug" data-cext = "seven" data-pretty="7">7</li>
+          <li class="dom" data-cext = "nine" data-pretty="9">9</li>
+          <li class="dom" data-cext = "eleven" data-pretty="11">11</li>
+          <li class="dom" data-cext = "thirteen" data-pretty="13">13</li>
           <li class="dim" data-cext = "halfdim" data-pretty="">1/2 dim</li>
         </ul>
       </div>

@@ -87,7 +87,15 @@
       default: 
     }
 
-    document.getElementById("chord").value = root + chord_type + chord_ext
+    var elChord = document.getElementById("chord");
+
+    elChord.setAttribute("data-note",orderNotes[0]);
+    elChord.innerHTML = document.querySelector("#js-chord-type li.on").dataset.pretty;
+    if (document.querySelector("#js-chord-ext li.on")) {
+      elChord.innerHTML = elChord.innerHTML + "<sup>" + document.querySelector("#js-chord-ext li.on").dataset.pretty + "</sup>"
+    }
+
+    
  }  
 
  document.getElementById("js-clear").addEventListener("click", function() {

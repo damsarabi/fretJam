@@ -37,6 +37,7 @@ header {
   background-color: #161b22;
   align-items: center;
   flex-wrap: nowrap;
+  margin-bottom: 40px;
 }
 
 ul.top-row > li:first-child {
@@ -92,6 +93,7 @@ ul.top-row > li {
 ul.js-chord-ext {
   left: 0;
   top: 100%;
+  margin-top: 7px;
   background-color: black;
   opacity: .1;
 }
@@ -147,9 +149,12 @@ ul.js-chord-ext li {
   transition: all 1.5s ease;
   background: #21262d;
   color: #f0f6fc;
-  padding: 7px;
+  padding: 7px 40px;
+  font-size: 20px;
+  color: #0bff00;
   display: inline-block;
 }
+
 
 #chord, #root {
   border: 0;
