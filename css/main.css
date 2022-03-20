@@ -38,6 +38,7 @@ header {
   align-items: center;
   flex-wrap: nowrap;
   margin-bottom: 40px;
+  border-bottom: 1px solid #cfcfcf;
 }
 
 ul.top-row > li:first-child {
@@ -106,20 +107,22 @@ ul.js-chord-ext {
   flex: auto;
 }
 
-.clear-all {
+header a {
   color: #fff;
   text-decoration: none;
-  padding: 10px;
+  padding: 10px 15px;
   position: relative;
-  opacity: .7;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1;
+  background-color: #fff;
+  border-left: 1px solid #cfcfcf;
+}
+
+header a:hover, header a.on {
+  background-color: #cfcfcf;
 }
 
 
-.clear-all:hover {
-  opacity: 1;
-}
 ul.js-chord-ext li {
   display: none;
 }
@@ -183,6 +186,10 @@ div.grid.fret-count > div {
   aspect-ratio:  auto;
   margin: 15px 0;
   font-weight: bold;
+}
+
+.monochrome .note.on {
+  background-color: #ccc!important;
 }
 
 .container > div {

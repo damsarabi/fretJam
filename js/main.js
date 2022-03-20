@@ -94,23 +94,37 @@
     if (document.querySelector("#js-chord-ext li.on")) {
       elChord.innerHTML = elChord.innerHTML + "<sup>" + document.querySelector("#js-chord-ext li.on").dataset.pretty + "</sup>"
     }
-
-    
  }  
 
+ // refresh page
  document.getElementById("js-clear").addEventListener("click", function() {
   location.reload()
  })
 
+ // toggle single color
+ document.getElementById("js-monochrome").addEventListener("click", function() {
+  document.getElementById("fret-board").classList.toggle("monochrome");
+  this.classList.toggle('on');
+ })
+
+ // Individual note toggle
+ document.getElementById("js-ind-notes").addEventListener("click", function() {
+  document.getElementById("fret-board").classList.toggle("ind-notes");
+  this.classList.toggle('on');
+ })
+
  changeChord();
 
-// Changing the Root
 var el = document.querySelectorAll("#fret-board .note");
-  for (let i = 0; i < el.length; i++) {
-    el[i].addEventListener("click", function() {
-    document.getElementById("root").value = el[i].dataset.note;
-    changeChord();
-  });
+for (let i = 0; i < el.length; i++) {
+  el[i].addEventListener("click", function() {
+    if (document.getElementById("fret-board").classList.contains('ind-notes')) {
+      el[i].classList.toggle('on');
+    } else {
+      document.getElementById("root").value = el[i].dataset.note;
+      changeChord();
+    }
+  })
 }
 
   // Changing the Chord Type
@@ -147,14 +161,14 @@ var el = document.querySelectorAll("#fret-board .note");
     });
   }
 
-  var rowHide = document.querySelectorAll("#js-row-toggle > li") 
+  var rowHide = document.querySelectorAll("#js-row-toggle > li"); 
   for (let i = 0; i < rowHide.length; i++) {
     rowHide[i].addEventListener("click", function() {
       rowHide[i].classList.toggle("hide");
     });
   }
 
-  var xtraNote = document.querySelectorAll("#js-allnotes > li")
+  var xtraNote = document.querySelectorAll("#js-allnotes > li");
 
   for (let i = 0; i < xtraNote.length; i++) {
     xtraNote[i].addEventListener("click", function() {
