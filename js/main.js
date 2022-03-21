@@ -57,15 +57,25 @@
       case "maj":
         turnOn("majThird");
         turnOn("fifth");
-        if (chord_ext === "seventh") turnOn("majSeventh")
-        if (chord_ext === "seventh") turnOn("majSeventh")
+        if (chord_ext === "sixth") turnOn("majSixth");
+        if (chord_ext === "sixnine"){
+          turnOn("majSixth");
+          turnOn("majSecond")
+        } 
+        if (chord_ext === "seventh") turnOn("majSeventh");
+        if (chord_ext === "nineth") turnOn("majSecond");
+        if (chord_ext === "eleventh") turnOn("forth");
+        if (chord_ext === "thirteenth") turnOn("majSixth");
         break;
       case "min":
         turnOn("minThird");
         turnOn("fifth");
-        if (chord_ext === "sixth") turnOn("majSixth")
-        if (chord_ext === "seventh") turnOn("minSeventh")
-        if (chord_ext === "nineth") turnOn("nineth")
+        if (chord_ext === "sixth") turnOn("majSixth");
+        if (chord_ext === "seventh") turnOn("minSeventh");
+        if (chord_ext === "nineth") turnOn("majSecond");
+        if (chord_ext === "eleventh") turnOn("forth");
+        if (chord_ext === "thirteenth") turnOn("majSixth");
+        if (chord_ext === "minmaj7") turnOn("majSeventh");
         break;
       case "dom":
         turnOn("majThird");
