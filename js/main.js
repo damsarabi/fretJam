@@ -80,17 +80,24 @@
       case "dom":
         turnOn("majThird");
         turnOn("fifth");
-        turnOn("minSeventh")
+        turnOn("minSeventh");
         break;
       case "dim":
         turnOn("minThird");
         turnOn("tritone");
-        if (chord_ext === "seven") turnOn("majSixth")
-        if (chord_ext === "halfdim") turnOn("minSeventh")
+        if (chord_ext === "seven") turnOn("majSixth");
+        if (chord_ext === "halfdim") turnOn("minSeventh");
         break;
       case "aug":
         break;
       case "sus":
+        turnOn("fifth");
+        if (chord_ext === "two") turnOn("majSecond");
+        if (chord_ext === "four") turnOn("forth");
+        if (chord_ext === "7sus4") {
+          turnOn("forth");
+          turnOn("minSeventh");
+        } 
         break;
 
       default: 
